@@ -1,0 +1,15 @@
+@use "../abstracts/index" as abstracts;
+
+:root {
+  @include abstracts.generate-root-variables(abstracts.$colors);
+  @include abstracts.generate-root-variables(abstracts.$gradients);
+  @include abstracts.generate-root-variables(abstracts.$font-families);
+  @include abstracts.generate-root-variables(abstracts.$font-weights);
+  @include abstracts.generate-root-variables(abstracts.$font-sizes);
+  @include abstracts.generate-root-variables(abstracts.$line-heights);
+  @include abstracts.generate-root-variables(abstracts.$letter-spacings);
+  @include abstracts.generate-root-variables(abstracts.$spacings);
+  @include abstracts.generate-root-variables(abstracts.$radiuses);
+
+  font-size: 16px;
+}

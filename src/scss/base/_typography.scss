@@ -1,0 +1,92 @@
+@use "../abstracts/index" as abstracts;
+
+.text-preset-1 {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-martian-mono),
+    $font-weight: var(--font-weight-700),
+    $font-size: var(--font-size-3xl),
+    $line-height: var(--line-height-120),
+    $letter-spacing: var(--letter-spacing-3xs)
+  );
+}
+
+.text-preset-2 {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-martian-mono),
+    $font-weight: var(--font-weight-600),
+    $font-size: var(--font-size-2xl),
+    $line-height: var(--line-height-120),
+    $letter-spacing: var(--letter-spacing-3xs)
+  );
+}
+
+.text-preset-3 {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-martian-mono),
+    $font-weight: var(--font-weight-600),
+    $font-size: var(--font-size-xl),
+    $line-height: var(--line-height-130),
+    $letter-spacing: var(--letter-spacing-2xs)
+  );
+}
+
+.text-preset-4 {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-martian-mono),
+    $font-weight: var(--font-weight-600),
+    $font-size: var(--font-size-lg),
+    $line-height: var(--line-height-110),
+    $letter-spacing: var(--letter-spacing-2xs)
+  );
+}
+
+.text-preset-4-regular {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-martian-mono),
+    $font-weight: var(--font-weight-400),
+    $font-size: var(--font-size-lg),
+    $line-height: var(--line-height-110),
+    $letter-spacing: var(--letter-spacing-2xs)
+  );
+}
+
+.text-preset-5 {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-inter),
+    $font-weight: var(--font-weight-400),
+    $font-size: var(--font-size-rg),
+    $line-height: var(--line-height-140),
+    $letter-spacing: var(--letter-spacing-xs)
+  );
+}
+
+.text-preset-5-semibold {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-inter),
+    $font-weight: var(--font-weight-600),
+    $font-size: var(--font-size-rg),
+    $line-height: var(--line-height-140),
+    $letter-spacing: var(--letter-spacing-xs)
+  );
+}
+
+.text-preset-6 {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-martian-mono),
+    $font-weight: var(--font-weight-600),
+    $font-size: var(--font-size-sm),
+    $line-height: var(--line-height-130),
+    $letter-spacing: var(--letter-spacing-2xs),
+    $text-transform: uppercase
+  );
+}
+
+.text-preset-7 {
+  @include abstracts.set-font-styles(
+    $font-family: var(--font-family-martian-mono),
+    $font-weight: var(--font-weight-400),
+    $font-size: var(--font-size-xs),
+    $line-height: var(--line-height-120),
+    $letter-spacing: var(--letter-spacing-2xs)
+  );
+}

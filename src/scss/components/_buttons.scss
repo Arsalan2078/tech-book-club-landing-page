@@ -1,0 +1,29 @@
+@use "../base/index" as base;
+
+.button {
+  @extend .text-preset-6;
+
+  margin: var(--spacing-75);
+  border-radius: var(--radius-8);
+  padding: var(--spacing-250) var(--spacing-300);
+
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-200);
+
+  &--primary {
+    border: var(--spacing-25) solid var(--color-neutral-900);
+    background-color: var(--color-light-salmon-50);
+    color: var(--color-neutral-900);
+
+    &:hover,
+    &:focus {
+      background-image: var(--gradient-active);
+    }
+
+    &:active {
+      outline: var(--spacing-25) solid var(--color-neutral-700);
+      outline-offset: var(--spacing-50);
+    }
+  }
+}

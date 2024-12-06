@@ -1,0 +1,54 @@
+$font-families: (
+  "prefix": "font-family",
+  "values": (
+    martian-mono: (
+      "Martian Mono",
+      monospace,
+    ),
+    inter: (
+      "Inter",
+      sans-serif,
+    ),
+  ),
+);
+
+$font-weights: (
+  "prefix": "font-weight",
+  "values": (
+    400: 400,
+    600: 600,
+    700: 700,
+  ),
+);
+
+$font-sizes: (
+  "prefix": "font-size",
+  "values": (
+    3xl: clamp(2.375rem, 0.9437rem + 6.1069vw, 3.875rem),
+    2xl: clamp(2.125rem, 1.1708rem + 4.0712vw, 3.125rem),
+    xl: clamp(1.5rem, 0.9036rem + 2.5445vw, 2.125rem),
+    lg: 1.5rem,
+    rg: 1.25rem,
+    sm: clamp(1rem, 0.8807rem + 0.5089vw, 1.125rem),
+    xs: 0.875rem,
+  ),
+);
+
+$line-heights: (
+  "prefix": "line-height",
+  "values": (
+    140: 140%,
+    130: 130%,
+    120: 120%,
+    110: 100%,
+  ),
+);
+
+$letter-spacings: (
+  "prefix": "letter-spacing",
+  "values": (
+    3xs: -0.125rem,
+    2xs: -0.0625rem,
+    xs: -0.03125rem,
+  ),
+);
