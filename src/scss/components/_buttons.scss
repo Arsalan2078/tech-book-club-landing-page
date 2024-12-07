@@ -1,9 +1,9 @@
 @use "../base/index" as base;
 
+// button
 .button {
   @extend .text-preset-6;
 
-  margin: var(--spacing-75);
   border-radius: var(--radius-8);
   padding: var(--spacing-250) var(--spacing-300);
 
@@ -11,6 +11,7 @@
   justify-content: center;
   gap: var(--spacing-200);
 
+  // --primary
   &--primary {
     border: var(--spacing-25) solid var(--color-neutral-900);
     background-color: var(--color-light-salmon-50);
@@ -23,7 +24,28 @@
 
     &:active {
       outline: var(--spacing-25) solid var(--color-neutral-700);
-      outline-offset: var(--spacing-50);
+      outline-offset: var(--spacing-25);
+    }
+  }
+
+  // --alternate
+  &--alternate {
+    border: var(--spacing-25) solid var(--color-neutral-0);
+    background-color: transparent;
+    color: var(--color-neutral-0);
+
+    &:hover,
+    &:focus {
+      background-image: linear-gradient(
+        90deg,
+        var(--color-neutral-700),
+        var(--color-neutral-900)
+      );
+    }
+
+    &:active {
+      outline: var(--spacing-25) solid var(--color-neutral-0);
+      outline-offset: var(--spacing-25);
     }
   }
 }
