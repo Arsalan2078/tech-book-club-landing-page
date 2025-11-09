@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div>
+    <div data-text-preset="5-regular">
       Join the ultimate tech book club
 
       Turn your reading time into learning time with fellow tech enthusiasts. 

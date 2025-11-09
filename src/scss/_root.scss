@@ -1,0 +1,38 @@
+@layer {
+  :root {
+    // colors
+    --c-neutral-900: rgb(6, 38, 48);
+    --c-neutral-700: rgb(56, 81, 89);
+    --c-neutral-200: rgb(230, 225, 223);
+    --c-neutral-100: rgb(250, 245, 243);
+    --c-neutral-0: rgb(255, 255, 255);
+    --c-light-salmon-500: rgb(254, 163, 111);
+    --c-light-salmon-100: rgb(255, 226, 209);
+    --c-light-salmon-50: rgb(255, 245, 239);
+
+    // fonts
+    --ff-inter: "Inter", sans-serif;
+    --ff-martian-mono: "Martian Mono", monospace;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --fs-2xl: clamp(2.375rem, 0.875rem + 6.25vw, 3.875rem);
+    --fs-xl: clamp(2.125rem, 1.125rem + 4.1667vw, 3.125rem);
+    --fs-lg: clamp(1.5rem, 0.875rem + 2.6042vw, 2.125rem);
+    --fs-md: 1.5rem;
+    --fs-rg: 1.25rem;
+    --fs-sm: clamp(1rem, 0.875rem + 0.5208vw, 1.125rem);
+    --fs-xs: 0.875rem;
+
+    --lh-110: 1.1;
+    --lh-120: 1.2;
+    --lh-130: 1.3;
+    --lh-140: 1.4;
+
+    --ls-tightest: calc(-2 / 16 * 1rem);
+    --ls-tighter: calc(-1 / 16 * 1rem);
+    --ls-tight: calc(-0.5 / 16 * 1rem);
+  }
+}
