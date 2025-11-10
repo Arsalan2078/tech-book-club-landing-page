@@ -1,4 +1,4 @@
-import MembershipOption from "../../../MembershipOption";
+import MembershipOption from "../../MembershipOption";
 
 export default function SectionMembershipOptions() {
   return (

@@ -1,4 +1,4 @@
-import SectionMembershipOptions from "../sections/section/MembershipOptions";
+import SectionMembershipOptions from "../sections/SectionMembershipOptions";
 import SectionNotAverage from "../sections/SectionNotAverage";
 import SectionReadingJourney from "../sections/SectionReadingJourney";
 import SectionReadTogether from "../sections/SectionReadTogether";
