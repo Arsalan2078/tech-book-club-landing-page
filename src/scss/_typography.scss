@@ -1,5 +1,4 @@
 @layer {
-  // 1
   [data-text-preset="1"] {
     font-family: var(--ff-martian-mono);
     font-weight: var(--fw-700);
@@ -8,7 +7,6 @@
     letter-spacing: var(--ls-tightest);
   }
 
-  // 2
   [data-text-preset="2"] {
     font-family: var(--ff-martian-mono);
     font-weight: var(--fw-700);
@@ -17,7 +15,6 @@
     letter-spacing: var(--ls-tightest);
   }
 
-  // 3
   [data-text-preset="3"] {
     font-family: var(--ff-martian-mono);
     font-weight: var(--fw-600);
@@ -26,41 +23,22 @@
     letter-spacing: var(--ls-tighter);
   }
 
-  // 4
-  [data-text-preset="4-regular"],
-  [data-text-preset="4-semibold"] {
+  [data-text-preset="4"] {
     font-family: var(--ff-martian-mono);
+    font-weight: var(--fw-600);
     font-size: var(--fs-md);
     line-height: var(--lh-110);
     letter-spacing: var(--ls-tighter);
   }
 
-  [data-text-preset="4-regular"] {
-    font-weight: var(--fw-400);
-  }
-
-  [data-text-preset="4-semibold"] {
-    font-weight: var(--fw-600);
-  }
-
-  // 5
-  [data-text-preset="5-regular"],
-  [data-text-preset="5-semibold"] {
+  [data-text-preset="5"] {
     font-family: "Inter";
+    font-weight: var(--fw-400);
     font-size: var(--fs-rg);
     line-height: var(--lh-140);
     letter-spacing: var(--ls-tight);
   }
 
-  [data-text-preset="5-regular"] {
-    font-weight: var(--fw-400);
-  }
-
-  [data-text-preset="5-semibold"] {
-    font-weight: var(--fw-600);
-  }
-
-  // 6
   [data-text-preset="6"] {
     font-family: var(--ff-martian-mono);
     font-weight: var(--fw-600);
@@ -69,12 +47,21 @@
     letter-spacing: var(--ls-tighter);
   }
 
-  // 7
   [data-text-preset="7"] {
     font-family: var(--ff-martian-mono);
-    font-weight: var(--fw-600);
-    font-size: var(--fs-sm);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-xs);
     line-height: var(--lh-120);
     letter-spacing: var(--ls-tighter);
+  }
+}
+
+@layer {
+  [data-uppercase] {
+    text-transform: uppercase;
+  }
+
+  [data-semibold] {
+    font-weight: var(--fw-600);
   }
 }

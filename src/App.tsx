@@ -1,79 +1,111 @@
+import Button from "./components/Button";
+import MembershipOption from "./components/MembershipOption";
+import TotalTestimonial from "./components/TotalTestimonial";
+
 export default function App() {
   return (
-    <div data-text-preset="5-regular">
-      Join the ultimate tech book club
+    <div data-text-preset="5">
+      <header>
+        <h1 data-text-preset="1">Join the ultimate tech book club</h1>
 
-      Turn your reading time into learning time with fellow tech enthusiasts. 
-      Get curated recommendations, join vibrant discussions, and level up your 
-      skills one chapter at a time.
+        <p>
+          Turn your reading time into learning time with fellow tech
+          enthusiasts. Get curated recommendations, join vibrant discussions,
+          and level up your skills one chapter at a time.
+        </p>
 
-      Review membership options
-      200+ developers joined already
+        <Button href="#">Review Membership Options</Button>
 
-      Read together, grow together
+        <TotalTestimonial />
+      </header>
 
-      Monthly curated tech reads selected by industry experts
-      Virtual and in-person meetups for deep-dive discussions
-      Early access to new tech book releases
-      Author Q&A sessions with tech thought leaders
+      <main>
+        <section>
+          <h2 data-text-preset="2">Read together, grow together</h2>
 
-      Not your average book club
+          <ul>
+            <li>Monthly curated tech reads selected by industry experts</li>
+            <li>Virtual and in-person meetups for deep-dive discussions</li>
+            <li>Early access to new tech book releases</li>
+            <li>Author Q&A sessions with tech thought leaders</li>
+          </ul>
+        </section>
 
-      Connect with a community that speaks your language - from Python to TypeScript and 
-      everything in between. Our discussions blend technical depth with practical applications.
+        <section>
+          <h2 data-text-preset="2">Not your average book club</h2>
 
-      Your tech reading journey
+          <p>
+            Connect with a community that speaks your language - from{" "}
+            <span data-semibold>Python</span> to{" "}
+            <span data-semibold>TypeScript</span> and everything in between. Our
+            discussions blend technical depth with practical applications.
+          </p>
+        </section>
 
-      1
-      Choose your membership tier
+        <section>
+          <h2 data-text-preset="2">Your tech reading journey</h2>
 
-      2
-      Get your monthly book selection
+          <ol>
+            <li>Choose your membership tier</li>
+            <li>Get your monthly book selection</li>
+            <li>Join our discussion forums</li>
+            <li>Attend exclusive meetups</li>
+          </ol>
+        </section>
 
-      3
-      Join our discussion forums
+        <section>
+          <h2 data-text-preset="2">Membership options</h2>
 
-      4
-      Attend exclusive meetups
+          <ul>
+            <li>
+              <MembershipOption
+                name="Starter"
+                price={19}
+                perks={["1 book/month", "Online forums"]}
+                cta={{ link: "#", text: "Subscribe now" }}
+              />
+            </li>
+            <li>
+              <MembershipOption
+                name="Pro"
+                price={29}
+                perks={["2 books/month", "Virtual meetups"]}
+                cta={{ link: "#", text: "Subscribe now" }}
+              />
+            </li>
+            <li>
+              <MembershipOption
+                name="Enterprise"
+                price={"custom"}
+                perks={["Team access", "Private sessions"]}
+                cta={{ link: "#", text: "Talk to us" }}
+              />
+            </li>
+          </ul>
+        </section>
 
-      Membership options
+        <section>
+          <figure>
+            <blockquote data-text-preset="3">
+              This book club transformed my technical reading from a solitary
+              activity into an enriching community experience. The discussions
+              are gold!
+            </blockquote>
 
-      Starter
-      $19/month
+            <figcaption>Sarah Chen, Software Architect</figcaption>
+          </figure>
+        </section>
+      </main>
 
-      1 book/month
-      Online forums
+      <footer>
+        <h2 data-text-preset="2">Ready to debug your reading list?</h2>
 
-      Subscribe now
+        <Button href="#">Review membership options</Button>
 
-      Pro
-      $29/month
+        <TotalTestimonial />
 
-      2 books/month
-      Virtual meetups
-
-      Subscribe now
-
-      Enterprise
-      Custom
-
-      Team access
-      Private sessions
-
-      Talk to us
-
-      "This book club transformed my technical reading from a solitary 
-      activity into an enriching community experience. The discussions 
-      are gold!"
-
-      Sarah Chen, Software Architect
-
-      Ready to debug your reading list?
-
-      Review membership options
-      200+ developers joined already
-
-      © 2024 - Tech Book Club
+        <div data-text-preset="7">© 2024 - Tech Book Club</div>
+      </footer>
     </div>
   );
 }
