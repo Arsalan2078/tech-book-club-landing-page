@@ -24,7 +24,7 @@ export default function Header() {
           </div>
 
           <div>
-            <Button href="#">
+            <Button href="#section-membership-options">
               Review Membership Options <Icon icon="arrow-down" />
             </Button>
 
