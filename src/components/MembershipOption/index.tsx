@@ -8,6 +8,7 @@ type MembershipOptionProps = {
     link: string;
     text: string;
   };
+  isTop?: boolean;
 };
 
 export default function MembershipOption({
@@ -15,9 +16,10 @@ export default function MembershipOption({
   price,
   perks,
   cta,
+  isTop = false,
 }: MembershipOptionProps) {
   return (
-    <div>
+    <div data-top-option={isTop}>
       <div>
         <div data-text-preset="4">{name}</div>
         <div data-text-preset="3">

@@ -10,15 +10,18 @@ import imageReadTogetherDesktop from "/images/image-read-together-desktop.webp";
 import imageReadTogetherMobile from "/images/image-read-together-mobile.webp";
 import imageReadTogetherTablet from "/images/image-read-together-tablet.webp";
 
-type PictureProps = {
+interface PictureName {
   name: "hero" | "not-average" | "read-together";
+}
+
+interface PictureProps extends PictureName {
   alt: string;
   srcDesktop: string;
   srcMobile: string;
   srcTablet: string;
-};
+}
 
-export default function Picture({ name }: PictureProps) {
+export default function Picture({ name }: PictureName) {
   const pictures: PictureProps[] = [
     {
       name: "hero",

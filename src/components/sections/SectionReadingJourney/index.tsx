@@ -1,6 +1,6 @@
 export default function SectionReadingJourney() {
   return (
-    <section>
+    <section id="section-reading-journey">
       <div data-container="lg">
         <h2 data-text-preset="2">Your tech reading journey</h2>
 

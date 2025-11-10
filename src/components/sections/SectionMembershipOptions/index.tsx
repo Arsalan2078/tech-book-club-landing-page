@@ -2,7 +2,7 @@ import MembershipOption from "../../MembershipOption";
 
 export default function SectionMembershipOptions() {
   return (
-    <section data-x-padding>
+    <section id="section-membership-options" data-x-padding>
       <div data-container="md">
         <h2 data-text-preset="2">Membership options</h2>
 

@@ -1,7 +1,17 @@
+import Icon from "../../Icon";
+
 export default function SectionTestimonial() {
   return (
-    <section data-x-padding>
+    <section id="section-testimonial" data-x-padding>
       <div data-container="md">
+        <div>
+          <Icon icon="star" />
+          <Icon icon="star" />
+          <Icon icon="star" />
+          <Icon icon="star" />
+          <Icon icon="star" />
+        </div>
+
         <figure>
           <blockquote data-text-preset="3">
             This book club transformed my technical reading from a solitary
