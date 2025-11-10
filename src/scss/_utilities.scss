@@ -1,2 +1,41 @@
 @layer {
+  // flow
+  [data-flow] {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(4rem, 3rem + 4.167vw, 5rem);
+
+    @media screen and (min-width: calc(768 / 16 * 1rem)) {
+      gap: clamp(5rem, 2.143rem + 5.952vw, 7.5rem);
+    }
+  }
+
+  // padding
+  [data-x-padding] {
+    --padding: clamp(1rem, 0rem + 4.1667vw, 2rem);
+
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
+
+  // container
+  [data-container="xl"] {
+    margin: 0 auto;
+    width: min(100%, calc(1440 / 16 * 1rem));
+  }
+
+  [data-container="lg"] {
+    margin: 0 auto;
+    width: min(100%, calc(1170 / 16 * 1rem));
+  }
+
+  [data-container="md"] {
+    margin: 0 auto;
+    width: min(100%, calc(970 / 16 * 1rem));
+  }
+
+  [data-container="sm"] {
+    margin: 0 auto;
+    width: min(100%, calc(753 / 16 * 1rem));
+  }
 }
