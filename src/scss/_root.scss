@@ -1,14 +1,14 @@
 @layer {
   :root {
     // colors
-    --c-neutral-900: rgb(6, 38, 48);
-    --c-neutral-700: rgb(56, 81, 89);
-    --c-neutral-200: rgb(230, 225, 223);
-    --c-neutral-100: rgb(250, 245, 243);
-    --c-neutral-0: rgb(255, 255, 255);
-    --c-light-salmon-500: rgb(254, 163, 111);
-    --c-light-salmon-100: rgb(255, 226, 209);
-    --c-light-salmon-50: rgb(255, 245, 239);
+    --c-neutral-900: rgb(6 38 48);
+    --c-neutral-700: rgb(56 81 89);
+    --c-neutral-200: rgb(230 225 223);
+    --c-neutral-100: rgb(250 245 243);
+    --c-neutral-0: rgb(255 255 255);
+    --c-light-salmon-500: rgb(254 163 111);
+    --c-light-salmon-100: rgb(255 226 209);
+    --c-light-salmon-50: rgb(255 245 239);
 
     // fonts
     --ff-inter: "Inter", sans-serif;
@@ -36,3 +36,9 @@
     --ls-tight: calc(-0.5 / 16 * 1rem);
   }
 }
+
+// *,
+// *::before,
+// *::after {
+//   outline: 1px solid red;
+// }

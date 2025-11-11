@@ -1,3 +1,4 @@
+import styles from "./index.module.scss";
 import type { ReactNode } from "react";
 
 export default function Button({
@@ -8,7 +9,12 @@ export default function Button({
   children: ReactNode;
 }) {
   return (
-    <a href={href} data-text-preset="6" data-uppercase>
+    <a
+      className={styles.button}
+      href={href}
+      data-text-preset="6"
+      data-uppercase
+    >
       {children}
     </a>
   );

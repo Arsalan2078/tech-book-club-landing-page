@@ -3,6 +3,10 @@
     display: block;
   }
 
+  picture img {
+    width: 100%;
+  }
+
   blockquote {
     &::before {
       content: '"';

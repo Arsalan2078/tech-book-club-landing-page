@@ -1,0 +1,42 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 1.5rem;
+
+  @media screen and (min-width: calc(921 / 16 * 1rem)) {
+    &[data-top-option] {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  > div {
+    display: inherit;
+    flex-direction: inherit;
+    gap: 1.5rem;
+
+    // name
+    > div:nth-of-type(2) {
+      display: inherit;
+      align-items: center;
+      gap: 0.5rem;
+
+      font-size: calc(34 / 16 * 1rem);
+    }
+
+    // divider
+    > hr {
+      height: 0.0625rem;
+      background-color: transparent;
+    }
+
+    // perks
+    > ul {
+      display: inherit;
+      flex-direction: inherit;
+      gap: 1rem;
+    }
+  }
+}

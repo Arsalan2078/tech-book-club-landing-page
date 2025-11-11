@@ -1,4 +1,6 @@
+import styles from "./index.module.scss";
 import Button from "../Button";
+import CheckedItem from "../CheckedItem";
 
 type MembershipOptionProps = {
   name: string;
@@ -19,7 +21,7 @@ export default function MembershipOption({
   isTop = false,
 }: MembershipOptionProps) {
   return (
-    <div data-top-option={isTop}>
+    <div className={styles.option} data-top-option={isTop || undefined}>
       <div>
         <div data-text-preset="4">{name}</div>
         <div data-text-preset="3">
@@ -42,7 +44,9 @@ export default function MembershipOption({
 
         <ul>
           {perks.map((perk, index) => (
-            <li key={index}>{perk}</li>
+            <CheckedItem isSmall isDark={isTop} key={index}>
+              {perk}
+            </CheckedItem>
           ))}
         </ul>
       </div>

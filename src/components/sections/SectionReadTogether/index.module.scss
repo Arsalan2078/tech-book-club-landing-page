@@ -1,0 +1,28 @@
+.wrapper {
+  display: grid;
+  gap: 2.5rem 5rem;
+
+  @media screen and (min-width: calc(930 / 16 * 1rem)) {
+    grid-template-columns: 560fr 530fr;
+    grid-template-areas: "c-2 c-1";
+    align-items: center;
+
+    > *:first-child {
+      grid-area: c-1;
+    }
+
+    > *:last-child {
+      grid-area: c-2;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  row-gap: clamp(1.5rem, 0.875rem + 2.6042vw, 2.125rem);
+
+  > ul {
+    display: inherit;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,10 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  padding: calc(17.5 / 16 * 1rem) calc(24 / 16 * 1rem);
+}

@@ -24,10 +24,10 @@ export default function Icon({ icon }: IconProps) {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
+          width="20"
           height="25"
           fill="none"
-          viewBox="0 0 24 25"
+          viewBox="0 0 20 25"
         >
           <path
             fill="#062630"
@@ -39,10 +39,10 @@ export default function Icon({ icon }: IconProps) {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
+          width="20"
           height="25"
           fill="none"
-          viewBox="0 0 24 25"
+          viewBox="0 0 20 25"
         >
           <path
             fill="#fff"

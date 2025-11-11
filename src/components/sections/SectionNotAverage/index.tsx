@@ -1,10 +1,12 @@
+import styles from "./index.module.scss";
 import Picture from "../../Picture";
+import TechBrands from "../../TechBrands";
 
 export default function SectionNotAverage() {
   return (
     <section id="section-not-average" data-x-padding>
-      <div data-container="lg">
-        <div>
+      <div className={styles.wrapper} data-container="lg">
+        <div className={styles.content}>
           <h2 data-text-preset="2">Not your average book club</h2>
 
           <p>
@@ -18,6 +20,10 @@ export default function SectionNotAverage() {
         <figure>
           <Picture name="not-average" />
         </figure>
+
+        <div className={styles.brands}>
+          <TechBrands />
+        </div>
       </div>
     </section>
   );

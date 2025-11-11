@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  margin-top: clamp(3rem, 2rem + 4.1667vw, 4rem);
+
+  @media screen and (min-width: calc(768 / 16 * 1rem)) {
+    margin-top: clamp(4rem, 2.3519rem + 3.4335vw, 5rem);
+  }
+
+  > *:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    > h2 {
+      text-align: center;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  > *:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    border-bottom: 0.0625rem solid transparent;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    @media screen and (min-width: calc(480 / 16 * 1rem)) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.socmeds {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.375rem;
+    aspect-ratio: 1;
+  }
+}
