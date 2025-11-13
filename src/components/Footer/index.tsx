@@ -5,7 +5,7 @@ import TotalTestimonial from "../TotalTestimonial";
 
 export default function Footer() {
   return (
-    <footer id="footer" data-x-padding>
+    <footer className={`${styles.footer} pattern--dark`} id="footer" data-x-padding>
       <div className={styles.wrapper} data-container="lg">
         <div data-container="sm">
           <h2 data-text-preset="2">Ready to debug your reading list?</h2>

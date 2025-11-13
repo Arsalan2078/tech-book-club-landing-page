@@ -12,6 +12,7 @@ export default function Button({
     <a
       className={styles.button}
       href={href}
+      role="button"
       data-text-preset="6"
       data-uppercase
     >

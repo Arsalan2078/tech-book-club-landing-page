@@ -3,12 +3,18 @@
   flex-direction: column;
   gap: 2rem;
 
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--stroke-color);
   padding: 1.5rem;
+
+  background-color: var(--bg-color-option);
 
   @media screen and (min-width: calc(921 / 16 * 1rem)) {
     &[data-top-option] {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
+
+      background-color: var(--bg-color-option-top);
     }
   }
 
@@ -18,7 +24,7 @@
     gap: 1.5rem;
 
     // name
-    > div:nth-of-type(2) {
+    > div:nth-of-type(1) {
       display: inherit;
       align-items: center;
       gap: 0.5rem;
@@ -29,7 +35,7 @@
     // divider
     > hr {
       height: 0.0625rem;
-      background-color: transparent;
+      background-color: var(--stroke-color);
     }
 
     // perks

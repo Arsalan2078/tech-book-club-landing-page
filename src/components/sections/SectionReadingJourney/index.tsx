@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 export default function SectionReadingJourney() {
   return (
     <section className={styles.section} id="section-reading-journey">
-      <div className={styles.wrapper} data-container="lg">
+      <div className={`${styles.wrapper} pattern--light`} data-container="lg">
         <h2 data-text-preset="2">Your tech reading journey</h2>
 
         <ol className={styles.list}>

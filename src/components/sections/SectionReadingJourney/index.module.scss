@@ -14,6 +14,13 @@
 
   border-radius: 1.25rem;
   padding: 5rem 3.75rem;
+
+  background-color: var(--bg-color-reading-journey);
+
+  > h2 {
+    width: min(100%, calc(512 / 16 * 1rem));
+    text-align: center;
+  }
 }
 
 .list {
@@ -40,9 +47,21 @@
       align-items: center;
 
       border-radius: 0.25rem;
-      border: 0.125rem solid transparent;
+      border: 0.125rem solid var(--text-color-display);
       width: 2.5rem;
       aspect-ratio: 1;
+
+      font-size: 1.5rem;
+      font-weight: var(--fw-400);
+    }
+  }
+
+  > li:not(:last-child) {
+    &::after {
+      position: absolute;
+      content: url("/images/pattern-arrow.svg");
+      top: 0;
+      right: 0;
     }
   }
 }

@@ -5,6 +5,25 @@
   gap: 1rem;
 
   border-radius: 0.5rem;
-  border: 0.125rem solid transparent;
+  border: 0.125rem solid var(--text-color-button);
   padding: calc(17.5 / 16 * 1rem) calc(24 / 16 * 1rem);
+
+  background-image: var(--bg-image-button);
+  background-size: 200% auto;
+  background-position-x: 100%;
+
+  transition-property: background-position-x, box-shadow;
+  transition-duration: 0.15s;
+
+  &:hover,
+  &:focus {
+    background-position-x: 0%;
+  }
+
+  &:focus {
+    box-shadow: (
+      0 0 0 calc(3 / 16 * 1rem) var(--shadow-color-button-1),
+      0 0 0 calc(5 / 16 * 1rem) var(--shadow-color-button-2)
+    );
+  }
 }

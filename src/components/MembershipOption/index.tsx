@@ -23,7 +23,7 @@ export default function MembershipOption({
   return (
     <div className={styles.option} data-top-option={isTop || undefined}>
       <div>
-        <div data-text-preset="4">{name}</div>
+        <h3 data-text-preset="4">{name}</h3>
         <div data-text-preset="3">
           {price === "custom" ? (
             <>Custom</>
