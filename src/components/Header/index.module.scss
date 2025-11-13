@@ -19,6 +19,11 @@
 
   padding-top: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
   padding-bottom: 5rem;
+
+  > nav {
+    display: flex;
+    justify-content: start;
+  }
 }
 
 .content {

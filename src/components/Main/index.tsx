@@ -6,7 +6,7 @@ import SectionTestimonial from "../sections/SectionTestimonial";
 
 export default function Main() {
   return (
-    <main data-flow>
+    <main id="main" data-flow>
       <SectionReadTogether />
       <SectionNotAverage />
       <SectionReadingJourney />

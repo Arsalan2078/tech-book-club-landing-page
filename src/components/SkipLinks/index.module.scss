@@ -1,0 +1,25 @@
+.skip {
+  position: fixed;
+
+  a {
+    position: absolute;
+    left: -99rem;
+    top: auto;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    overflow: hidden;
+
+    padding: 0 0.5rem;
+
+    background-color: var(--c-light-salmon-500);
+    color: var(--c-neutral-900);
+
+    text-decoration: underline;
+  }
+
+  a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+}
