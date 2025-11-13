@@ -7,7 +7,11 @@ import TotalTestimonial from "../TotalTestimonial";
 
 export default function Header() {
   return (
-    <header className={`${styles.header} pattern--light`} id="header" data-x-padding>
+    <header
+      className={`${styles.header} pattern--light`}
+      id="header"
+      data-x-padding
+    >
       <div className={styles.wrapper} data-container="lg">
         <nav>
           <Logo />
