@@ -1,0 +1,72 @@
+.section {
+  display: none;
+
+  @media screen and (min-width: calc(1234 / 16 * 1rem)) {
+    display: block;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  border-radius: 1.25rem;
+  padding: 5rem 3.75rem;
+
+  background: (
+    var(--img-pattern-light) no-repeat,
+    var(--img-pattern-glow) no-repeat calc(100% + calc(512 / 16 * 1rem))
+      calc(100% + calc(590 / 16 * 1rem)),
+    var(--bg-color-reading-journey)
+  );
+
+  > h2 {
+    width: min(100%, calc(512 / 16 * 1rem));
+    text-align: center;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+
+  counter-reset: counter;
+
+  > li {
+    position: relative;
+    counter-increment: counter;
+
+    padding-top: 4rem;
+
+    &::before {
+      position: absolute;
+      content: counter(counter);
+      top: 0;
+      left: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 0.25rem;
+      border: 0.125rem solid var(--text-color-display);
+      width: 2.5rem;
+      aspect-ratio: 1;
+
+      font-size: 1.5rem;
+      font-weight: var(--fw-400);
+    }
+  }
+
+  > li:not(:last-child) {
+    &::after {
+      position: absolute;
+      content: url("/images/pattern-arrow.svg");
+      top: 0;
+      right: 0;
+    }
+  }
+}

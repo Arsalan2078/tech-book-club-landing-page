@@ -1,0 +1,48 @@
+.wrapper {
+  position: relative;
+
+  display: grid;
+  gap: 2.5rem 5rem;
+
+  @media screen and (min-width: calc(930 / 16 * 1rem)) {
+    grid-template-columns: 530fr 560fr;
+    align-items: center;
+  }
+}
+
+.content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.circle {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 125%;
+    height: 125%;
+    left: -12.5%;
+    top: -12.5%;
+    background: var(--img-pattern-circle) no-repeat center center / contain;
+  }
+}
+
+.brands {
+  position: absolute;
+
+  display: none;
+
+  @media screen and (min-width: calc(600 / 16 * 1rem)) {
+    right: 3.125rem;
+    bottom: 3.125rem;
+
+    display: block;
+  }
+
+  @media screen and (min-width: calc(930 / 16 * 1rem)) {
+    right: initial;
+    left: clamp(27.5rem, 10.2919rem + 29.6053vw, 33.125rem);
+  }
+}

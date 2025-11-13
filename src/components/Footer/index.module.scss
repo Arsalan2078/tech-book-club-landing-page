@@ -1,0 +1,101 @@
+.footer {
+  background: (
+    var(--img-pattern-dark) no-repeat left top,
+    var(--bg-color-footer)
+  );
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  // color assingments
+  --stroke-color: var(--c-neutral-700);
+
+  --bg-image-button: linear-gradient(
+    90deg,
+    var(--c-neutral-700) 0%,
+    var(--c-neutral-900) 50%,
+    transparent 50%
+  );
+
+  --shadow-color-button-1: var(--c-neutral-900);
+  --shadow-color-button-2: var(--c-neutral-200);
+
+  --text-color: var(--c-neutral-0);
+  --text-color-display: var(--c-neutral-0);
+  --text-color-button: var(--c-neutral-0);
+  --text-color-small: var(--c-neutral-100);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  margin-top: clamp(3rem, 2rem + 4.1667vw, 4rem);
+
+  @media screen and (min-width: calc(768 / 16 * 1rem)) {
+    margin-top: clamp(4rem, 2.3519rem + 3.4335vw, 5rem);
+  }
+
+  > *:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    > h2 {
+      text-align: center;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  > *:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    border-top: 0.0625rem solid var(--stroke-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    @media screen and (min-width: calc(480 / 16 * 1rem)) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.socmeds {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.375rem;
+    aspect-ratio: 1;
+
+    outline: 0.125rem solid transparent;
+    outline-offset: 0.25rem;
+
+    transition-property: opacity, outline-color;
+    transition-duration: 0.15s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: 0.125rem solid var(--c-neutral-200);
+    }
+  }
+}

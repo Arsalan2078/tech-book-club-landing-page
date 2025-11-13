@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 0.5rem + 4.1667vw, 2.5rem);
+
+  @media screen and (min-width: calc(768 / 16 * 1rem)) {
+    gap: clamp(2.5rem, 0.0279rem + 5.1502vw, 4rem);
+  }
+
+  @media screen and (min-width: calc(921 / 16 * 1rem)) {
+    > h2 {
+      text-align: center;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+
+  @media screen and (min-width: calc(600 / 16 * 1rem)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: calc(921 / 16 * 1rem)) {
+    grid-template-columns: 286fr 350fr 286fr;
+    align-items: center;
+  }
+}
