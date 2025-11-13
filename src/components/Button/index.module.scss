@@ -4,23 +4,23 @@
   align-items: center;
   gap: 1rem;
 
-  border-radius: 0.5rem;
-  border: 0.125rem solid var(--text-color-button);
+  border-radius: calc(8 / 16 * 1rem);
+  border: calc(2 / 16 * 1rem) solid var(--text-color-button);
   padding: calc(17.5 / 16 * 1rem) calc(24 / 16 * 1rem);
 
   background-image: var(--bg-image-button);
   background-size: 200% auto;
   background-position-x: 100%;
 
-  transition-property: background-position-x, box-shadow;
+  transition-property: background-position-x;
   transition-duration: 0.15s;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-position-x: 0%;
   }
 
-  &:focus {
+  &:focus-visible {
     box-shadow: (
       0 0 0 calc(3 / 16 * 1rem) var(--shadow-color-button-1),
       0 0 0 calc(5 / 16 * 1rem) var(--shadow-color-button-2)
