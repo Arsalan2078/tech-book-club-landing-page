@@ -7,7 +7,7 @@ export default function SectionNotAverage() {
     <section id="section-not-average" data-x-padding>
       <div className={styles.wrapper} data-container="lg">
         <div className={styles.content}>
-          <h2 data-text-preset="2">Not your average book club</h2>
+          <h2 data-text-preset="2">Not your average book <span className={styles.circle}>club</span></h2>
 
           <p>
             Connect with a community that speaks your language - from{" "}

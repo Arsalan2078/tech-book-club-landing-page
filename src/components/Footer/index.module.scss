@@ -1,5 +1,8 @@
 .footer {
-  background-color: var(--bg-color-footer);
+  background: (
+    var(--img-pattern-dark) no-repeat left top,
+    var(--bg-color-footer)
+  );
 
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;

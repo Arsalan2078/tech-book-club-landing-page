@@ -15,6 +15,20 @@
   gap: 1.5rem;
 }
 
+.circle {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 125%;
+    height: 125%;
+    left: -12.5%;
+    top: -12.5%;
+    background: var(--img-pattern-circle) no-repeat center center / contain;
+  }
+}
+
 .brands {
   position: absolute;
 

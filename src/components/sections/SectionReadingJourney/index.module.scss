@@ -15,7 +15,12 @@
   border-radius: 1.25rem;
   padding: 5rem 3.75rem;
 
-  background-color: var(--bg-color-reading-journey);
+  background: (
+    var(--img-pattern-light) no-repeat,
+    var(--img-pattern-glow) no-repeat calc(100% + calc(512 / 16 * 1rem))
+      calc(100% + calc(590 / 16 * 1rem)),
+    var(--bg-color-reading-journey)
+  );
 
   > h2 {
     width: min(100%, calc(512 / 16 * 1rem));

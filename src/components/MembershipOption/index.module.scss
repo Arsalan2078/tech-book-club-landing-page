@@ -9,12 +9,18 @@
 
   background-color: var(--bg-color-option);
 
+  &[data-top-option] {
+    background: (
+      var(--img-pattern-glow) no-repeat calc(100% + calc(568 / 16 * 1rem))
+        calc(100% + calc(730 / 16 * 1rem)),
+      var(--bg-color-option-top)
+    );
+  }
+
   @media screen and (min-width: calc(921 / 16 * 1rem)) {
     &[data-top-option] {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
-
-      background-color: var(--bg-color-option-top);
     }
   }
 

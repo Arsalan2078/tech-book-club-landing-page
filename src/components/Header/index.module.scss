@@ -1,7 +1,12 @@
 .header {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background-color: var(--bg-color-header);
+  background: (
+    var(--img-pattern-light) no-repeat left top,
+    var(--img-pattern-glow) no-repeat calc(100% + calc(872 / 32 * 1rem))
+      calc(100% + calc(626 / 32 * 1rem)),
+    var(--c-neutral-100)
+  );
 }
 
 .wrapper {
@@ -12,8 +17,8 @@
     gap: clamp(4rem, 2.3519rem + 3.4335vw, 5rem);
   }
 
-  margin-top: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
-  margin-bottom: 5rem;
+  padding-top: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
+  padding-bottom: 5rem;
 }
 
 .content {

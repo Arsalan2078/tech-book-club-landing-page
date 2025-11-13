@@ -57,6 +57,12 @@
   --ls-tighter: calc(-1 / 16 * 1rem);
   --ls-tight: calc(-0.5 / 16 * 1rem);
 
+  // images
+  --img-pattern-glow: url("/images/pattern-glow.svg");
+  --img-pattern-light: url("/images/pattern-light-bg.svg");
+  --img-pattern-dark: url("/images/pattern-dark-bg.svg");
+  --img-pattern-circle: url("/images/pattern-circle.png");
+
   // root styles
   color-scheme: light;
 }
